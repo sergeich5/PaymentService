@@ -43,9 +43,9 @@ class CloudPaymentsService implements IPaymentService
         $this->privateKey = $privateKey;
     }
 
-    function getPaymentUrl(int $accountId, int $amount, array $data, string $domain = ''): string
+    function getPaymentUrl(int $accountId, int $amount, array $data, string $url = ''): string
     {
-        return $domain . '?' . http_build_query(array_merge(
+        return $url . '?' . http_build_query(array_merge(
                 array(
                     'user_id' => $accountId,
                     'amount' => $amount
