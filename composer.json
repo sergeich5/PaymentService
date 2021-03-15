@@ -1,0 +1,20 @@
+{
+  "name": "sergeich5/payment-service",
+  "description": "Payment Service",
+  "type": "library",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "sergeich5",
+      "email": "arabyi@ya.ru"
+    }
+  ],
+  "autoload": {
+    "classmap": ["src/"]
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "ext-curl": "*"
+  }
+}
